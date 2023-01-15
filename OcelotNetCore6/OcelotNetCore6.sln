@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{5F532621-95A2-4F1E-B2FF-05116A27C90D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice1", "Microservice1\Microservice1.csproj", "{051C34FD-2327-466E-8765-72652DA01264}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotGateway", "OcelotGateway\OcelotGateway.csproj", "{2F6333AC-9C72-4A1D-B713-E9B10F141B49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice2", "Microservice2\Microservice2.csproj", "{0FE0A27B-2A36-4387-959F-C84270B7729E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomExceptionMiddleware", "CustomExceptionMiddleware\CustomExceptionMiddleware.csproj", "{4CC0FDA9-28F0-4B4A-8085-DD7347C7E885}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice3", "Microservice3\Microservice3.csproj", "{3F7025B3-196A-42AF-B06A-60C71DEEF5BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtAthenticationManager", "JwtAthenticationManager\JwtAthenticationManager.csproj", "{263E07A2-1A76-4C91-8672-D2AD0C3A92B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationWebAPI", "AuthenticationWebAPI\AuthenticationWebAPI.csproj", "{1BFCED1F-4EAA-44F5-ABAF-D6ABFAD964C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{051C34FD-2327-466E-8765-72652DA01264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051C34FD-2327-466E-8765-72652DA01264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051C34FD-2327-466E-8765-72652DA01264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051C34FD-2327-466E-8765-72652DA01264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6333AC-9C72-4A1D-B713-E9B10F141B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6333AC-9C72-4A1D-B713-E9B10F141B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6333AC-9C72-4A1D-B713-E9B10F141B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6333AC-9C72-4A1D-B713-E9B10F141B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE0A27B-2A36-4387-959F-C84270B7729E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE0A27B-2A36-4387-959F-C84270B7729E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE0A27B-2A36-4387-959F-C84270B7729E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE0A27B-2A36-4387-959F-C84270B7729E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC0FDA9-28F0-4B4A-8085-DD7347C7E885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC0FDA9-28F0-4B4A-8085-DD7347C7E885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC0FDA9-28F0-4B4A-8085-DD7347C7E885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC0FDA9-28F0-4B4A-8085-DD7347C7E885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7025B3-196A-42AF-B06A-60C71DEEF5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7025B3-196A-42AF-B06A-60C71DEEF5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7025B3-196A-42AF-B06A-60C71DEEF5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7025B3-196A-42AF-B06A-60C71DEEF5BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263E07A2-1A76-4C91-8672-D2AD0C3A92B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263E07A2-1A76-4C91-8672-D2AD0C3A92B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263E07A2-1A76-4C91-8672-D2AD0C3A92B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263E07A2-1A76-4C91-8672-D2AD0C3A92B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFCED1F-4EAA-44F5-ABAF-D6ABFAD964C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFCED1F-4EAA-44F5-ABAF-D6ABFAD964C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFCED1F-4EAA-44F5-ABAF-D6ABFAD964C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFCED1F-4EAA-44F5-ABAF-D6ABFAD964C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{051C34FD-2327-466E-8765-72652DA01264} = {5F532621-95A2-4F1E-B2FF-05116A27C90D}
+		{0FE0A27B-2A36-4387-959F-C84270B7729E} = {5F532621-95A2-4F1E-B2FF-05116A27C90D}
+		{3F7025B3-196A-42AF-B06A-60C71DEEF5BA} = {5F532621-95A2-4F1E-B2FF-05116A27C90D}
+		{1BFCED1F-4EAA-44F5-ABAF-D6ABFAD964C7} = {5F532621-95A2-4F1E-B2FF-05116A27C90D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FE5ACFB-B466-45D6-B5E0-7C33649BF2E8}
+	EndGlobalSection
+EndGlobal
