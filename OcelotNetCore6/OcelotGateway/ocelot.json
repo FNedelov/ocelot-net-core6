@@ -1,0 +1,147 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7108"
+  },
+  "Routes": [
+    // Authentication Web API
+    {
+      "UpstreamPathTemplate": "/gateway/Account/Authenticate",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Account/Authenticate",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7048
+        }
+      ]
+    },
+    // Microservice1
+    {
+      "UpstreamPathTemplate": "/gateway/Controller1/Method1",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Controller1/Method1",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7126
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Controller1/Method2",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Controller1/Method2",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7126
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Controller2/Method3",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Controller2/Method3",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7126
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Controller2/Method4",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Controller2/Method4",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7126
+        }
+      ]
+    },
+    // Microservice2
+    {
+      "UpstreamPathTemplate": "/gateway/MinAPI1/MinAPIMethod1",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/MinAPI1/MinAPIMethod1",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7215
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/MinAPI1/MinAPIMethod2",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/MinAPI1/MinAPIMethod2",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7215
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/MinAPI2/MinAPIMethod3",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/MinAPI2/MinAPIMethod3",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7215
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/MinAPI2/MinAPIMethod4",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/MinAPI2/MinAPIMethod4",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7215
+        }
+      ]
+    },
+    // Microservice3
+    {
+      "UpstreamPathTemplate": "/gateway/DIService/GetData",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/DIService/GetData",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7143
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/DIService/PostData",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/DIService/PostData",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7143
+        }
+      ]
+    }
+  ]
+}
